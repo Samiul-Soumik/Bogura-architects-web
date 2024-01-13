@@ -76,3 +76,73 @@ nav li a {
 .banner-image {
   margin-top: 50px;
 }
+.feature {
+  padding: 35px 210px;
+}
+.feature-picture {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.Quick-list {
+  color: #727272;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.of-Our {
+  color: #131313;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.Features {
+  color: #ff900e;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.feature-p {
+  color: #727272;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 32px;
+}
+/* responsive media querirs */
+/* mobile Devise */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  .nav-title {
+    flex-direction: column;
+  }
+  nav h1 {
+    text-align: center;
+  }
+  .feature-picture {
+    grid: none;
+  }
+  .feature {
+    padding: 20px;
+  }
+}
+/* For i pad */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  .nav-title {
+    flex-direction: column;
+  }
+  .feature {
+    padding: 20px;
+  }
+}
