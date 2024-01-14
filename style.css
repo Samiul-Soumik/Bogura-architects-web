@@ -99,6 +99,73 @@ nav li a {
   font-weight: 700;
   line-height: normal;
 }
+.product {
+  padding: 35px 210px;
+}
+.product-container {
+  display: flex;
+  gap: 100px;
+}
+.cardd {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.pp-hh {
+  color: #131313;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-left: 5px solid rgb(255, 130, 5);
+  padding-left: 10px;
+}
+.product-para {
+  color: #727272;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-bottom: 30px;
+}
+.ten-years-baatch {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  width: 342px;
+  padding: 40px;
+  position: relative;
+  bottom: 100px;
+}
+.ten-years-baatch h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+.ten-years-baatch p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.card-titiilee {
+  color: #131313;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card-ppp {
+  color: #727272;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
 .Features {
   color: #ff900e;
   font-family: Work Sans;
@@ -115,13 +182,117 @@ nav li a {
   font-weight: 400;
   padding-bottom: 32px;
 }
+.product-pic img {
+  height: 90%;
+  margin-left: 90px;
+}
+.facts-section {
+  padding: 35px 210px;
+}
+.facts-section h3 {
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #131313;
+}
+.facts-depsciption {
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  color: #727272;
+}
+.facts-card-container {
+  display: flex;
+
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  width: 241.831px;
+
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.card-number {
+  color: #424242;
+
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card-title {
+  color: #727272;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.sponser-area {
+  padding: 35px 210px;
+}
+.sponser {
+  text-align: center;
+}
+.sponser-title {
+  color: #131313;
+
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sponser-dep {
+  color: #727272;
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.sponser-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+.sponser-logos img {
+  width: 165px;
+}
+footer {
+  padding: 35px 210px;
+}
+.footer {
+  border-radius: 8px;
+  background: #fff4e7;
+  padding: 40px 410px;
+  text-align: center;
+  margin-top: 70px;
+}
 /* responsive media querirs */
 /* mobile Devise */
 @media screen and (max-width: 576px) {
-  header {
+  header,
+  .facts-section {
     padding: 20px;
   }
-  .nav-title {
+  .nav-title,
+  .facts-card-container,
+  .sponser-logos,
+  .product-container {
     flex-direction: column;
   }
   nav h1 {
@@ -130,8 +301,21 @@ nav li a {
   .feature-picture {
     grid: none;
   }
-  .feature {
+  .feature,
+  .sponser-area,
+  .product,
+  footer,
+  .footer {
     padding: 20px;
+  }
+  .product-pic img {
+    width: 90%;
+    padding: 20px;
+    margin: 0;
+  }
+  .ten-years-baatch {
+    position: static;
+    max-width: 300px;
   }
 }
 /* For i pad */
